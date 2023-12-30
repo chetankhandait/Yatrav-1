@@ -1,20 +1,14 @@
-import Filter from "./Filter";
 import HotelListing from "./HostelListing";
 import Search from "./Search";
-// import Data from "../Data/Data";
-import React, { useState } from "react";
+
+import React from "react";
 import HeroSection from "./HeroSection";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import PhotoCollage from "./PhotoCollage";
-import { useNavigate } from "react-router-dom";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { firebaseAuth } from "../../firebase-config";
-import { ImExit } from "react-icons/im";
+
 import Topbar from "./Topbar";
 
 const Home = () => {
-  // console.log(user)
   return (
     <div>
       <div className="w-full  font-mooli">
