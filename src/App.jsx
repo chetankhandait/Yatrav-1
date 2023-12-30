@@ -6,8 +6,9 @@ import PageSnippet from "./component/PageSnippet";
 import SepratePage from "./component/SepratePage";
 import SignIn from "./component/SignIn";
 import Signup from "./component/Signup";
-import Cancel from "./component/cancel";
+
 import Home from "/src/Component/Home";
+import Cancel from "./component/Cancel";
 
 const App = () => {
   return (
