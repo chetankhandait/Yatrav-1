@@ -7,7 +7,7 @@ import SepratePage from "./component/SepratePage";
 import SignIn from "./component/SignIn";
 import Signup from "./component/Signup";
 import Cancel from "./component/cancel";
-import Home from "./component/Home";
+import Home from "/src/Component/Home";
 
 const App = () => {
   return (
