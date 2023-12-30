@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Routes, BrowserRouter, NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+
 import MapSection from "./component/MapSection";
 import PageSnippet from "./component/PageSnippet";
 import SepratePage from "./component/SepratePage";
 import SignIn from "./component/SignIn";
 import Signup from "./component/Signup";
 
-import Home from "/src/Component/Home";
 import Cancel from "./component/Cancel";
+import Home from "./component/Home";
 
 const App = () => {
   return (
