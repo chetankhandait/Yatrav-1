@@ -1,9 +1,8 @@
 import React from "react";
-// import Home from "./Component/Home";
 import { Route, Routes, BrowserRouter, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MapSection from "./component/MapSection";
-import Footer from "./component/Footer";
+
 import PageSnippet from "./component/PageSnippet";
 import SepratePage from "./component/SepratePage";
 import SignIn from "./component/SignIn";
@@ -12,7 +11,7 @@ import Cancel from "./component/cancel";
 import Home from "./component/Home";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
