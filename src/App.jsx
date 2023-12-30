@@ -1,5 +1,5 @@
 import React from "react";
-// import Home from "./Component/Home";
+ 
 import { Route, Routes, BrowserRouter, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MapSection from "./component/MapSection";
