@@ -2,10 +2,8 @@ import React from "react";
 import Leaflet from "./Leaflet";
 import HeroSection from "./HeroSection";
 import Search from "./Search";
-import Filter from "./Filter";
 import Navigation from "./Navigation";
-import HotelListing from "./HostelListing";
-import Data from "../Data/Data";
+
 const MapSection = () => {
   return (
     <div>
