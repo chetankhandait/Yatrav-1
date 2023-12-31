@@ -34,7 +34,7 @@ const Leaflet = () => {
                 <img src={data.dp} alt="" className=" h-28    " />
                 <h3 className="font-semibold  ">{data.name}</h3>
 
-                <button className="bg-black text-white px-3 py-1 font-mooli  ">
+                <button className="bg-black rounded-md  text-white px-3 py-1 font-mooli  ">
                   {" "}
                   <Link to={`/detail/${data.id}`}> Learn More</Link>
                 </button>

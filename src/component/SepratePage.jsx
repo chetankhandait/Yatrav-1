@@ -98,7 +98,7 @@ const SepratePage = () => {
         "Content-Type": "application/json",
       };
       const response = await fetch(
-        "http://localhost:7000/api/create-checkout-session",
+        "https://yatra-backend-a04j.onrender.com/api/create-checkout-session",
         {
           method: "POST",
           headers: headers,
@@ -126,8 +126,8 @@ const SepratePage = () => {
   };
 
   return (
-    <div className="flex flex-col  text-left gap-3 w-full  sm:gap-5 text-base   ">
-      <div className=" sm:hidden        ">
+    <div className="flex flex-col  text-left gap-3 w-full overflow-hidden  sm:gap-5 text-base   ">
+      <div className="  sm:hidden        ">
         <PhotoCollage {...Hotel} />
       </div>
 

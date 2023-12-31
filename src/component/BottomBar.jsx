@@ -53,7 +53,7 @@ const BottomBar = (k) => {
         </div>
       </div>
       <button
-        className="px-2 mx-2 bg-purple-600 rounded-md flex items-center gap-1 mr-5 text-white font-semibold"
+        className="px-2 mx-2 bg-purple-600 rounded-md flex items-center gap-1   text-white font-semibold"
         onClick={makePayment}
       >
         <FaHome />

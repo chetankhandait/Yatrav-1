@@ -10,7 +10,7 @@ import Topbar from "./Topbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="w-full  font-mooli">
         <Topbar />
         <HeroSection />

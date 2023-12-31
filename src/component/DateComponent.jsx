@@ -28,7 +28,7 @@ const DateComponent = ({ onDateChange }) => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex py-4  ">
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
@@ -49,7 +49,7 @@ const DateComponent = ({ onDateChange }) => {
           customInput={<CustomDatePickerInput />}
         />
       </div>
-      <div className="bg-yellow-200 flex items-center p-3 gap-2 font-semibold rounded-md text-[14px] md:bg-gray-100 justify-between   ">
+      <div className="bg-yellow-200 flex items-center p-3 gap-4 font-semibold rounded-md text-[14px] md:bg-gray-100 justify-between   ">
         <FaCalendar />
         {startDate.toDateString()} <FaArrowRight />{" "}
         {endDate ? endDate.toDateString() : "..."}

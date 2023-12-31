@@ -7,8 +7,7 @@ import {
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../../firebase-config";
-import { FaGoogle } from "react-icons/fa";
-import NavigationforSigniN from "./NavigationforSigniN";
+import { FaGoogle, FaRegUser } from "react-icons/fa";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -45,8 +44,13 @@ const SignIn = () => {
   };
   return (
     <div className=" w-100% bg-[#f5deb3]   h-screen  text-center  sm:flex   ">
-      <div className="sm:w-1/2">
-        <NavigationforSigniN />
+      <div className=" w-full  md:w-1/2">
+        <section className="w-full  bg-blue-400 py-6">
+          <h2 className="py-1 text-2xl font-semibold text-white flex items-center justify-center ">
+            <FaRegUser />
+            Login
+          </h2>
+        </section>
         <section className=" flex flex-col mx-auto items-center justify-between px-3  py-4 ">
           <input
             type="email"
@@ -65,26 +69,26 @@ const SignIn = () => {
           />
           <div className="button">
             <button
-              className="w-full bg-blue-900 text-white p-2 rounded-md mb-2 hover:bg-blue-600"
+              className="w-full bg-blue-900 text-white p-2 rounded-md mb-2 hover:bg-blue-600 "
               onClick={handleSignIn}
             >
               Sign In
             </button>
             <button
-              className=" w-full shadow-2xl my-2 p-4  flex items-center  justify-center hover:bg-green-200 "
+              className=" w-full shadow-2xl my-2 p-4  flex items-center  justify-center hover:bg-green-200 font-medium "
               onClick={handleGoogleSignIn}
             >
               <img src="src/assets/search.png" alt="" className="h-4 pr-2" />
               Sign in with Google
             </button>
-            <span> Create an account?</span>
+            <span className=""> Create an account?</span>
             <Link to="/sign-up" className="text-blue-700 underline pl-2">
               Sign up
             </Link>
           </div>
         </section>
       </div>
-      <img src="src/assets/hotel.jpg" alt="" className="hidden sm:block" />
+      <img src="src/assets/hotel.jpg" alt="" className="hidden   md:block" />
     </div>
   );
 };

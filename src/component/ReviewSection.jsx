@@ -49,12 +49,12 @@ const ReviewComponent = (review) => {
   };
 
   return (
-    <div className="flex flex-col items-center sm:   ">
+    <div className="flex flex-col items-center py-5 my-3 sm:   ">
       <h2>Product Reviews</h2>
       <div className="w-full       sm:hidden ">
         <Slider
           {...setting}
-          className=" flex flex-col justify-center  rounded-md px-4 shadow-md text-left  mb-3  "
+          className=" flex flex-col justify-center  rounded-md px-4 shadow-md text-left  mb-3   "
         >
           {reviews.map((review) => (
             <div

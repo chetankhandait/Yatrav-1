@@ -30,7 +30,7 @@ const HotelListing = () => {
                 <img
                   src={k.dp}
                   alt=""
-                  className="h-[312px] rounded-md object-cover sm:h-[290px] "
+                  className="h-[312px] w-[321px]    rounded-md object-cover sm:h-[290px] "
                 />
                 {/* <PhotoCollage {...k} /> */}
                 <div>

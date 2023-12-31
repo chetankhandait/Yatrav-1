@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../../firebase-config";
-import NavigationforSigniN from "./NavigationforSigniN";
+import { FaClipboard, FaLiraSign, FaList } from "react-icons/fa";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -41,9 +41,14 @@ const Signup = () => {
   });
 
   return (
-    <div className=" w-100% bg-[#f5deb3]   h-screen  text-center  sm:flex   ">
-      <div className="  sm:w-1/2">
-        <NavigationforSigniN />
+    <div className=" w-100% bg-[rgb(245,222,179)]   h-screen  text-center  sm:flex   ">
+      <div className=" w-full  md:1/2   ">
+        <section className="w-full  bg-blue-400 py-6">
+          <h2 className="py-1 text-2xl font-semibold text-white flex items-center justify-center gap-1  ">
+            <FaClipboard />
+            Signup
+          </h2>
+        </section>
         <section className=" flex flex-col mx-auto items-center justify-between px-3  py-4 ">
           <input
             type="email"
@@ -92,7 +97,7 @@ const Signup = () => {
           </div>
         </section>
       </div>
-      <img src="src/assets/hotel.jpg" alt="" className="hidden sm:block" />
+      <img src="src/assets/hotel.jpg" alt="" className="hidden md:block" />
     </div>
   );
 };
