@@ -28,7 +28,7 @@ const DateComponent = ({ onDateChange }) => {
 
   return (
     <>
-      <div className="flex py-4  ">
+      <div className="flex flex-col  py-4  w-full  sm:flex-row ">
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
@@ -37,6 +37,7 @@ const DateComponent = ({ onDateChange }) => {
           endDate={endDate}
           showPopperArrow={false}
           customInput={<CustomDatePickerInput />}
+          readOnly={false}
         />
         <DatePicker
           selected={endDate}
@@ -47,6 +48,7 @@ const DateComponent = ({ onDateChange }) => {
           minDate={startDate}
           showPopperArrow={false}
           customInput={<CustomDatePickerInput />}
+          readOnly={false}
         />
       </div>
       <div className="bg-yellow-200 flex items-center p-3 gap-4 font-semibold rounded-md text-[14px] md:bg-gray-100 justify-between   ">

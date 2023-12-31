@@ -1,5 +1,5 @@
 import { loadStripe } from "@stripe/stripe-js";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaRupeeSign } from "react-icons/fa";
 
 const BottomBar = (k) => {
   const { startDate, endDate } = k.selectedDate;
@@ -43,11 +43,14 @@ const BottomBar = (k) => {
   };
 
   return (
-    <div className="fixed bottom-0 flex flex-row  justify-between w-full   pl-2  p-3 z-10  font-medium text-[15px] bg-white sm:hidden   ">
-      <hr className="bg-black text-blue-900 sm:hidden   " />
+    <div className="fixed bottom-0 flex flex-row  justify-between w-full -mx-[10px]     p-3 z-10  font-medium text-[15px] bg-white   sm:hidden   ">
+      {/* <hr className="bg-black text-blue-900 sm:hidden   " /> */}
       <div className="flex flex-col items-start justify-center w-full ">
-        <h3>${k.price}</h3>
-        <div className="flex">
+        <h3 className="flex items-center">
+          <FaRupeeSign />
+          {k.price}
+        </h3>
+        <div className="flex ">
           <h2> {startDate.toDateString()} </h2> <span>-</span>
           <h2> {endDate ? endDate.toDateString() : "not selected"} </h2>
         </div>

@@ -52,7 +52,7 @@ const ReviewComponent = (review) => {
     <div className="flex flex-col items-center py-5 my-3 sm:   ">
       <h2>Product Reviews</h2>
       <div className="w-full       sm:hidden ">
-        <Slider
+        {/* <Slider
           {...setting}
           className=" flex flex-col justify-center  rounded-md px-4 shadow-md text-left  mb-3   "
         >
@@ -75,22 +75,22 @@ const ReviewComponent = (review) => {
               </p>
             </div>
           ))}
-        </Slider>
+        </Slider> */}
       </div>
-      <div className="hidden sm:flex flex-wrap gap-4 mx-auto items-center justify-center  ">
+      <div className="flex  flex-1 sm:gap-4 mx-auto flex-wrap   items-center justify-center  ">
         {reviews.map((review) => (
           <div
             key={review.id}
-            className=" shadow-lg w-[36.266667%] pl-2 h-[10rem] rounded-lg border-gray-500 "
+            className="   w-full h-60 mb-4 sm:w-[36.266667%]  shadow-lg  pl-2 rounded-lg border-gray-500 "
           >
-            <p className="flex items-center text-xs pt-2  justify-center pb-2   ">
+            <p className="  sm:pt-2  flex items-center text-xs   justify-center pb-2   ">
               {" "}
               {Array.from({ length: review.rating }).map((_, index) => (
                 <FaStar key={index} />
               ))}
             </p>
 
-            <p className="pl-6 pb-2 text-base   ">{review.content}</p>
+            <p className="pl-6 pb-2 text-base    ">{review.content}</p>
             <p className="pl-6 text-base font-semibold text-blue-700">
               {" "}
               {review.author}
@@ -101,7 +101,7 @@ const ReviewComponent = (review) => {
       <h3 className="py-3 px-2 font-semibold ">Add Your Review</h3>
       <form
         onSubmit={handleSubmit}
-        className=" flex flex-col  sm:w-2/3 mx-auto     "
+        className=" flex flex-col w-full    sm:w-2/3 mx-auto     "
       >
         <label className="flex  flex-col  items-start font-semibold gap-2 ">
           Author:
@@ -110,8 +110,8 @@ const ReviewComponent = (review) => {
             name="author"
             value={newReview.author}
             onChange={handleInputChange}
-            className="bg-[#dddad5]  rounded-md shadow-sm p-1 text-gray-800 w-full"
-            placeholder="your name "
+            className="bg-white border border-black  rounded-md shadow-sm p-1 text-gray-800 w-full"
+            placeholder="Your name "
           />
         </label>
         <br />
@@ -135,7 +135,7 @@ const ReviewComponent = (review) => {
             name="content"
             value={newReview.content}
             onChange={handleInputChange}
-            className="p-2 shadow-xl rounded-md bg-[#dddad5] w-full  h-40     "
+            className="p-2 shadow-xl rounded-md bg-white border border-black w-full  h-40     "
             placeholder="write here"
           />
         </label>

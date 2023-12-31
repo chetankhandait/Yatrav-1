@@ -41,56 +41,56 @@ const Signup = () => {
   });
 
   return (
-    <div className=" w-100% bg-[rgb(245,222,179)]   h-screen  text-center  sm:flex   ">
-      <div className=" w-full  md:1/2   ">
-        <section className="w-full  bg-blue-400 py-6">
+    <div className=" w-100%   h-screen  text-center bg-black sm:flex    ">
+      <div className=" w-full   md:1/2   ">
+        <section className="w-full  bg-blue-400 py-6 px-8  ">
           <h2 className="py-1 text-2xl font-semibold text-white flex items-center justify-center gap-1  ">
             <FaClipboard />
             Signup
           </h2>
         </section>
-        <section className=" flex flex-col mx-auto items-center justify-between px-3  py-4 ">
+        <section className=" flex flex-col mx-auto items-center justify-between px-3  py-4   bg-black">
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-md shadow-sm  my-3 px-2 py-2"
+            className="w-full rounded-md shadow-sm bg-black text-white border border-white my-3 px-2 py-2 font-normal"
           />
 
           <input
             type="text"
             placeholder="Username"
-            className="w-full rounded-md shadow-sm  my-3 px-2 py-2"
+            className="w-full rounded-md shadow-sm bg-black text-white border border-white my-3 px-2 py-2 font-normal"
           />
 
           <input
             type="password"
             placeholder="Password"
-            className="w-full rounded-md shadow-sm  my-3 px-2 py-2"
+            className="w-full rounded-md shadow-sm bg-black text-white border border-white my-3 px-2 py-2 font-normal"
           />
           <input
             type="password"
             placeholder=" Confirm Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-md shadow-sm  my-3 px-2 py-2"
+            className="w-full rounded-md shadow-sm bg-black text-white border border-white my-3 px-2 py-2 font-normal"
           />
           <div className="button">
             <button
-              className="w-full bg-blue-900 text-white p-2 rounded-md mb-2 hover:bg-blue-600"
+              className="w-full bg-white  text-black p-2 rounded-md mb-2 hover:scale-105 transition-all ease-out"
               onClick={handleSignup}
             >
               Sign up
             </button>
             <button
-              className=" w-full shadow-2xl my-2 p-4  flex items-center  justify-center hover:bg-green-200 "
+              className="bg-white rounded-md w-full shadow-2xl my-2 p-4  flex items-center  justify-center hover:"
               onClick={handleGoogleSignup}
             >
               <img src="src/assets/search.png" alt="" className="h-4 pr-2" />
               Sign up with Google
             </button>
-            <span>Already have an account?</span>
+            <span className="text-white">Already have an account?</span>
             <Link to="/sign-in" className="text-blue-700 underline pl-2">
               Login
             </Link>
