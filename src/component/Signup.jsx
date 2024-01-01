@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../../firebase-config";
 import { FaClipboard, FaLiraSign, FaList } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -19,8 +20,10 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
+      toast.success("Account created successfully ");
     } catch (error) {
       console.log(error);
+      toast.error("Plese enter valid details");
     }
   };
 

@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../../firebase-config";
 import { FaGoogle, FaRegUser } from "react-icons/fa";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -17,8 +19,10 @@ const SignIn = () => {
   const handleSignIn = async () => {
     try {
       await signInWithEmailAndPassword(firebaseAuth, email, password);
+      toast.success("Sign in Successfull ");
     } catch (error) {
       console.log(error);
+      toast.error("Sign in failed.please chekc your email and password");
     }
   };
 
@@ -26,22 +30,22 @@ const SignIn = () => {
     const provider = new GoogleAuthProvider();
     try {
       const result = await signInWithPopup(firebaseAuth, provider);
+
       // Access user data from the result if needed
-      // const user = result.user;
-      console.log(result.user);
+      const user = result.user;
+      toast.success(`hello ${user.displayName}`);
     } catch (error) {
       console.log(error);
+      toast.error("Sign in failed.please chekc your email and password");
     }
   };
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
-    if (currentUser) navigate("/");
+    if (currentUser) {
+      navigate("/");
+    }
   });
 
-  const [item, setItem] = useState("");
-  const handleItemclic = (index) => {
-    setItem(index);
-  };
   return (
     <div className=" w-100% bg-black  h-screen  text-center  sm:flex   ">
       <div className=" w-full  md:w-1/2">

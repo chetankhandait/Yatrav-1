@@ -21,8 +21,8 @@ import ReviewSection from "./ReviewSection";
 import { loadStripe } from "@stripe/stripe-js";
 
 const SepratePage = () => {
-  const { productId } = useParams();
-  const Hotel = Data.find((find) => find.id === productId);
+  const { Name } = useParams();
+  const Hotel = Data.find((find) => find.name === Name);
   const { ...x } = Hotel;
   const [user, setUser] = useState(undefined);
   const navigate = useNavigate();

@@ -62,18 +62,18 @@ const BottomBar = (k) => {
     <div className="fixed bottom-0 flex flex-row  justify-between w-full -mx-[10px]     p-3 z-10  font-medium text-[15px] bg-white   sm:hidden   ">
       {/* <hr className="bg-black text-blue-900 sm:hidden   " /> */}
       <div className="flex flex-col items-start justify-center w-full ">
-        <h3 className="flex items-center">
+        <h3 className="flex items-center font-semibold">
           <FaRupeeSign />
           {k.price}
         </h3>
         <div className="flex ">
           <h3> No of Days : {k.selectedDate} </h3>
-          <div className="flex gap-5 items-center">
+          <div className="flex gap-3 items-center">
             <h1 className="">
               {" "}
               Guest : <span className="text-gray-500">{value}</span>{" "}
             </h1>
-            <div className="flex gap-3 items-center ">
+            <div className="flex gap-2 items-center mr-2 ">
               <button
                 onClick={increment}
                 className="bg-blue-600 rounded-full  w-7 h-7 text-white hover:bg-blue-400"

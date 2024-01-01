@@ -15,24 +15,23 @@ const Topbar = () => {
       navigate("/sign-in");
     }
   });
-
+  const defaultProfileImage = "src/assets/default.png"; // Add the path to your default image
   return (
-    <div className="bg-white py-4 w-full h-16 fixed flex  justify-end mb-11  gap-[27rem] z-30 font-semibold">
+    <div className="bg-white py-4 w-full h-16 fixed    flex   justify-between  gap-5   z-30 font-semibold    ">
       <img
         src="https://thumbs.dreamstime.com/b/hotel-linear-icon-modern-outline-logo-concept-white-ba-background-restaurant-collection-suitable-use-web-apps-133521021.jpg"
         alt=""
         className="w-14 object-cover pt-2"
       />
-      <div className="translate-x-1/2 px-2 ">यात्रा(Yatra )</div>
+
       {user && (
         <>
-          <div className="flex  justify-end items-center mr-10  ">
-            <div className="flex gap-5 items-center ">
-              <p className="  text-sm font-normal "> {user.displayName}</p>
+          <div className="flex  justify-end items-center mr-3  ">
+            <div className="flex gap-1  items-center   ">
               <img
-                src={user?.photoURL}
+                src={user?.photoURL || defaultProfileImage}
                 alt="User Profile"
-                className="h-11 object-cover rounded-full    "
+                className="h-[1.95rem] object-cover rounded-full    "
               />
               <button
                 className=" text-center    "

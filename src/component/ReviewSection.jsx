@@ -51,32 +51,7 @@ const ReviewComponent = (review) => {
   return (
     <div className="flex flex-col items-center py-5 my-3 sm:   ">
       <h2>Product Reviews</h2>
-      <div className="w-full       sm:hidden ">
-        {/* <Slider
-          {...setting}
-          className=" flex flex-col justify-center  rounded-md px-4 shadow-md text-left  mb-3   "
-        >
-          {reviews.map((review) => (
-            <div
-              key={review.id}
-              className=" shadow-lg w-1/2 px-2  h-[11rem] rounded-md border-gray-500"
-            >
-              <p className="flex items-center text-xs pt-2  justify-center pb-2   ">
-                {" "}
-                {Array.from({ length: review.rating }).map((_, index) => (
-                  <FaStar key={index} />
-                ))}
-              </p>
-
-              <p className="pl-6 pb-2 translate-x-3 pr-2">{review.content}</p>
-              <p className="pl-6 translate-x-3 text-blue-700  ">
-                {" "}
-                {review.author}
-              </p>
-            </div>
-          ))}
-        </Slider> */}
-      </div>
+      <div className="w-full       sm:hidden "></div>
       <div className="flex  flex-1 sm:gap-4 mx-auto flex-wrap   items-center justify-center  ">
         {reviews.map((review) => (
           <div

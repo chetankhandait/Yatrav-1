@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import { FaIndianRupeeSign, FaRupeeSign } from "react-icons/fa6";
 import { FaHeart, FaHotel, FaRestroom } from "react-icons/fa";
 // import SepratePage from './SepratePage';
-
+import "aos/dist/aos.css";
+import Aos from "aos";
 const HotelListing = () => {
+  Aos.init();
   const setting = {
     dots: true,
     infinite: true,
@@ -24,8 +26,11 @@ const HotelListing = () => {
         // console.log(Data)
         Data.map((k) => {
           return (
-            <Link to={`/detail/${k.id}`}>
-              <div className="  my-2  rounded-md px-2   sm: w-[400px]  ">
+            <Link to={`/detail/${k.name}`}>
+              <div
+                className="  my-2  rounded-md px-2   sm: w-[400px]  "
+                data-aos="fade-up"
+              >
                 <FaHeart className="relative top-[2.05rem] left-[21.5rem] text-white z-50" />
                 <img
                   src={k.dp}
