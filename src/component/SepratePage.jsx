@@ -29,7 +29,7 @@ const SepratePage = () => {
   const [value, setValue] = useState(0);
   const [isLoading, setLoading] = useState(false);
 
-  const increment = (user) => {
+  const increment = () => {
     setValue(value + 1);
   };
   const decrement = () => {
@@ -68,7 +68,6 @@ const SepratePage = () => {
     // Calculate the number of days
     const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
 
-    // Now, you can use the 'daysDifference' variable as the number of days
     console.log("Number of days:", daysDifference);
 
     setSelectedDate({ startDate, endDate });
@@ -238,11 +237,7 @@ const SepratePage = () => {
         </div>
 
         <hr className="bg-black text-blue-900" />
-        <BottomBar
-          price={x.price}
-          selectedDate={selectedDate}
-          data={products}
-        />
+        <BottomBar price={x.price} selectedDate={day} name={x.name} />
 
         <section className="flex flex-col w-full sm:w-1/3 justify-start gap-2 bg-gray-200  p-2 rounded-md  ">
           {/* hotel owner  */}

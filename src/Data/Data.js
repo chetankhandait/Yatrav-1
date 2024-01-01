@@ -226,10 +226,70 @@ const Data = [
 
     },
 
-
+    { 
+      id: "five",
+      name: "Entire villa in Pune, India",
+      type: "Entire Villa",
+      rooms: "Multiple rooms",
+      dp: "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/2e218e1f-20f1-422b-82ce-a83256fb8a20.jpeg?im_w=960",
+      img: [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/2e218e1f-20f1-422b-82ce-a83256fb8a20.jpeg?im_w=960",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/d744362f-22a7-4e05-92b2-c39f9273ac68.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/8dcff939-78c2-4d5b-95d3-ecf72c5ed5a3.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/55efa726-69b1-4810-b565-113f4f71dd88.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-32284211/original/ea3c9999-f6c7-4d58-a137-0db5c6ae0715.jpeg?im_w=720"
+      ],
+      geocode: [18.5204, 73.8567],
+      description: "A beautiful entire villa located in Pune, India. Experience luxury and comfort with multiple rooms and stunning amenities.",
+      capacity: "Varies",
+      review: "N/A",
+      reviewCount: 0,
+      price: "N/A",
+      guest: "Varies",
+      owner: "John Doe",
+      ownerImg: "https://example.com/host-image.jpg",
+      Feature: [
+        "Add feature 1",
+        "Add feature 2",
+        "Add feature 3"
+      ],
+      reviewText: [],
+      DetailDescription: ""
+    },
+    
      
      
-
+    {
+      id: "six",
+      name: "Villa Kapungkur",
+      type: "Villa",
+      rooms: "Multiple rooms",
+      dp: "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/9512e845-de53-47e6-830d-6a8eb7a287d2.jpeg?im_w=1200",
+      img: [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/9512e845-de53-47e6-830d-6a8eb7a287d2.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/a18ba128-9d2c-43c5-9ec6-9ca15d561abd.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/9416b45e-b8a9-4e4d-bdb0-7342608674d8.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/0a9441de-1a6e-4031-8861-901cf8dfb18d.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-924450654260663447/original/76132720-8b89-4ebc-8e93-a4d67423f5b6.jpeg?im_w=1200"
+      ],
+      geocode: [],  // Add the geocode if available
+      description: "Villa Kapungkur offers a luxurious stay with multiple rooms and stunning amenities. Experience comfort and tranquility surrounded by beautiful landscapes.",
+      capacity: "Varies",
+      review: "N/A",
+      reviewCount: 0,
+      price: "N/A",
+      guest: "Varies",
+      owner: "Host Name",
+      ownerImg: "https://example.com/host-image.jpg",
+      Feature: [
+        "Add feature 1",
+        "Add feature 2",
+        "Add feature 3"
+      ],
+      reviewText: [],
+      DetailDescription: ""
+    }
+    
     
   
 

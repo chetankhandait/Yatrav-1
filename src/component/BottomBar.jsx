@@ -1,9 +1,21 @@
 import { loadStripe } from "@stripe/stripe-js";
+import { ka } from "date-fns/locale";
+import { useState } from "react";
 import { FaHome, FaRupeeSign } from "react-icons/fa";
 
 const BottomBar = (k) => {
-  const { startDate, endDate } = k.selectedDate;
+  console.log(k.data);
+  const [value, setValue] = useState(0);
+  const increment = () => {
+    setValue(value + 1);
+  };
+  const decrement = () => {
+    if (value > 0) setValue(value - 1);
+  };
 
+  const products = [
+    { name: k.name, price: k.price, date: k.selectedDate, guest: value },
+  ];
   const makePayment = async () => {
     try {
       const stripe = await loadStripe(
@@ -11,7 +23,7 @@ const BottomBar = (k) => {
       );
 
       const body = {
-        product: k.data,
+        product: products,
       };
       const headers = {
         "Content-Type": "application/json",
@@ -51,8 +63,27 @@ const BottomBar = (k) => {
           {k.price}
         </h3>
         <div className="flex ">
-          <h2> {startDate.toDateString()} </h2> <span>-</span>
-          <h2> {endDate ? endDate.toDateString() : "not selected"} </h2>
+          <h3> No of Days : {k.selectedDate} </h3>
+          <div className="flex gap-5 items-center">
+            <h1 className="">
+              {" "}
+              Guest : <span className="text-gray-500">{value}</span>{" "}
+            </h1>
+            <div className="flex gap-3 items-center ">
+              <button
+                onClick={increment}
+                className="bg-blue-600 rounded-full  w-7 h-7 text-white hover:bg-blue-400"
+              >
+                +
+              </button>{" "}
+              <button
+                onClick={decrement}
+                className="bg-blue-600 rounded-full  w-7 h-7  text-white hover:bg-blue-400 "
+              >
+                -{" "}
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <button
