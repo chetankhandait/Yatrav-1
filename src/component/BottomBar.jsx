@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaHome, FaRupeeSign } from "react-icons/fa";
 
 const BottomBar = (k) => {
+  const [isloading, setIsloading] = useState(false);
   console.log(k.data);
   const [value, setValue] = useState(0);
   const increment = () => {
@@ -17,6 +18,7 @@ const BottomBar = (k) => {
     { name: k.name, price: k.price, date: k.selectedDate, guest: value },
   ];
   const makePayment = async () => {
+    setIsloading(true);
     try {
       const stripe = await loadStripe(
         "pk_test_51OSFPgSE08OvuMJOjiiOvikRQOEd1rjH0IV2UeunFNqpRv7gDvU0JW5i1Ab3ph8nD5kraOfg1GmZDBGfNDnBnQdb00kTRgUDyB"
@@ -51,6 +53,8 @@ const BottomBar = (k) => {
       }
     } catch (error) {
       console.error("Error making payment:", error.message);
+    } finally {
+      setIsloading(false);
     }
   };
 
@@ -87,11 +91,13 @@ const BottomBar = (k) => {
         </div>
       </div>
       <button
-        className="px-2 mx-2 bg-purple-600 rounded-md flex items-center gap-1   text-white font-semibold"
         onClick={makePayment}
+        className={`bg-blue-700 text-white font-semibold p-3 w-1/2 mx-auto rounded-md mt-2 mb-4 hover:bg-blue-400 ${
+          isloading ? "opacity-50 cursor-not-allowed" : "" // Disable button and change opacity when loading
+        }`}
+        disabled={isloading}
       >
-        <FaHome />
-        Reserve
+        {isloading ? "Loading..." : "Submit"}
       </button>
     </div>
   );
