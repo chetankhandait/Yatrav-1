@@ -24,12 +24,13 @@ const HotelListing = () => {
     <div className="flex flex-wrap flex-1 items-center justify-center  ">
       {
         // console.log(Data)
-        Data.map((k) => {
+        Data.map((k, index) => {
           return (
             <Link to={`/detail/${k.name}`}>
               <div
                 className="  my-2  rounded-md px-2   sm: w-[400px]  "
                 data-aos="fade-up"
+                key={index}
               >
                 <FaHeart className="relative top-[2.05rem] left-[21.5rem] text-white z-50" />
                 <img

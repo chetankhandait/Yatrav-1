@@ -36,7 +36,7 @@ const Leaflet = () => {
 
                 <button className="bg-black rounded-md  text-white px-3 py-1 font-mooli  ">
                   {" "}
-                  <Link to={`/detail/${data.id}`}> Learn More</Link>
+                  <Link to={`/detail/${data.name}`}> Learn More</Link>
                 </button>
               </Popup>
             </Tooltip>

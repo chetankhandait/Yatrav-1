@@ -11,8 +11,8 @@ const Navigation = () => {
           List View{" "}
         </h2>
       </NavLink>
-      <NavLink to="/">
-        <h2 className="bg-black text-slate-100  rounded-md my-3 fixed left-[139.2px] bottom-0  text-center flex flex-col items-center justify-center p-2  z-20 sm:hidden   ">
+      <NavLink to="/map">
+        <h2 className="bg-black text-slate-100  rounded-md my-3 fixed left-[139.2px] bottom-0  text-center flex flex-col items-center justify-center p-2  z-20 md:static md:flex-row   ">
           <FaMapLocationDot />
           Map View
         </h2>
