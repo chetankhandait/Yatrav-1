@@ -771,8 +771,402 @@ const Data = [
     }
   ],
   DetailDescription: ''
+},
+  {
+  id: "bali-farmstay",
+  name: "Tranquil Farm Stay in Kecamatan Mengwi, Bali, Indonesia",
+  type: "Farm Stay",
+  rooms: "Cozy Cottage",
+  dp: "https://a0.muscache.com/im/pictures/11d087b8-770c-4f20-b487-4eb7da7df994.jpg?im_w=720",
+  img: [
+    "https://a0.muscache.com/im/pictures/11d087b8-770c-4f20-b487-4eb7da7df994.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/8cd965ee-743e-4d5c-a213-1785f639b776.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/e9cca77a-9469-42f3-9093-bb3e702dbea7.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/0162fe3e-bfe1-45f9-9998-a2c4115438c4.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Luxury-41232703/original/6572e163-647b-4a5c-a738-8bd3c044fc70?im_w=1200"
+  ],
+  geocode: [-8.5452, 115.2275],
+  description:
+    "Experience a tranquil farm stay in Kecamatan Mengwi, Bali, Indonesia, at this Cozy Cottage. Surrounded by nature, this farm stay provides a peaceful retreat away from the hustle and bustle of the city.",
+  capacity: "2 guests 1 bedroom 1 bathroom",
+  review: "4.8",
+  reviewCount: 8,
+  price: "4500",
+  guest: '18+',
+  owner: 'Host Name',
+  ownerImg: 'https://example.com/host-profile-image.jpg',
+  Feature: [
+    "Rural Setting",
+    "Outdoor Seating Area",
+    "Farm-to-Table Experience",
+    "Wi-Fi",
+    "Air Conditioning",
+    "Free Parking"
+  ],
+  reviewText: [
+    {
+      id: 1,
+      author: "Maria",
+      country: "Indonesia",
+      content:
+        "A wonderful stay at the Tranquil Farm Stay in Bali! The Cozy Cottage provided a perfect blend of nature and comfort. The farm-to-table experience was delightful, and the hosts were welcoming.",
+      rating: 5
+    },
+    {
+      id: 2,
+      author: "John",
+      country: "United States",
+      content:
+        "Breathtaking views! The outdoor seating area offered stunning views of the surrounding nature. We enjoyed the peaceful atmosphere and the warm hospitality of the hosts.",
+      rating: 5
+    },
+    {
+      id: 3,
+      author: "Sakura",
+      country: "Japan",
+      content:
+        "A hidden gem in Mengwi! The Cozy Cottage is a perfect getaway. The rural setting, combined with modern amenities, creates a unique and memorable experience.",
+      rating: 4
+    },
+    {
+      id: 4,
+      author: "Antonio",
+      country: "Italy",
+      content:
+        "An enchanting stay! The tranquil environment and farm-to-table experience make this farm stay exceptional. Highly recommended for those seeking relaxation and nature.",
+      rating: 5
+    }
+  ],
+  DetailDescription: ''
 }
+, 
+{
+  id: "siolim-beach-house",
+  name: "Charming Beach House in Siolim, Goa, India",
+  type: "Beach House",
+  rooms: "Sea View Suite",
+  dp: "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/50efdd90-9de0-43cd-9f1f-e1258486d61e.jpeg?im_w=720",
+  img: [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/50efdd90-9de0-43cd-9f1f-e1258486d61e.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/3d347fe2-f983-4def-8e97-390117e8c421.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/82d8a9db-2548-400a-8287-03bfa459bb24.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/8e205e76-2506-4b64-b626-4efe08e7422b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-878171574433690191/original/c9e70be8-3ef7-41cb-a710-e37dca8df58f.jpeg?im_w=720"
+  ],
+  geocode: [15.6122, 73.7377],
+  description:
+    "Experience the charm of Goa at this beach house in Siolim. The Sea View Suite offers stunning views of the sea, providing a perfect getaway for those who love the beach and tranquility.",
+  capacity: "2 guests 1 bedroom 1 bathroom",
+  review: "4.8",
+  reviewCount: 15,
+  price: "5500",
+  guest: '18+',
+  owner: 'Host Name',
+  ownerImg: 'https://example.com/host-profile-image.jpg',
+  Feature: [
+    "Sea View Balcony",
+    "Private Beach Access",
+    "Wi-Fi",
+    "Air Conditioning",
+    "Free Parking"
+  ],
+  reviewText: [
+    {
+      id: 1,
+      author: "Sophie",
+      country: "France",
+      content:
+        "Our stay at the Charming Beach House in Siolim was delightful. The Sea View Suite provides breathtaking views of the sea. Private beach access made our stay even more special.",
+      rating: 5
+    },
+    {
+      id: 2,
+      author: "Raj",
+      country: "India",
+      content:
+        "A perfect beach getaway! The Sea View Suite is cozy and comfortable. The beach house is well-maintained, and the private beach access adds to the overall experience.",
+      rating: 4
+    },
+    {
+      id: 3,
+      author: "Lily",
+      country: "United States",
+      content:
+        "Charming indeed! The Sea View Suite offers a perfect blend of comfort and charm. We enjoyed the sea views from the balcony and the peaceful atmosphere of Siolim.",
+      rating: 5
+    },
+    {
+      id: 4,
+      author: "Carlos",
+      country: "Spain",
+      content:
+        "A hidden gem in Goa! The Charming Beach House exceeded our expectations. The Sea View Suite is well-appointed, and the host ensured a memorable stay.",
+      rating: 5
+    }
+  ],
+  DetailDescription: ''
+} ,
+ {
+  id: "bali-farmstay",
+  name: "Tranquil Farm Stay in Kecamatan Mengwi, Bali, Indonesia",
+  type: "Farm Stay",
+  rooms: "Cozy Cottage",
+  dp: "https://a0.muscache.com/im/pictures/11d087b8-770c-4f20-b487-4eb7da7df994.jpg?im_w=720",
+  img: [
+    "https://a0.muscache.com/im/pictures/11d087b8-770c-4f20-b487-4eb7da7df994.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/8cd965ee-743e-4d5c-a213-1785f639b776.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/e9cca77a-9469-42f3-9093-bb3e702dbea7.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/0162fe3e-bfe1-45f9-9998-a2c4115438c4.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/monet/Luxury-41232703/original/6572e163-647b-4a5c-a738-8bd3c044fc70?im_w=1200"
+  ],
+  geocode: [-8.5452, 115.2275],
+  description:
+    "Experience a tranquil farm stay in Kecamatan Mengwi, Bali, Indonesia, at this Cozy Cottage. Surrounded by nature, this farm stay provides a peaceful retreat away from the hustle and bustle of the city.",
+  capacity: "2 guests 1 bedroom 1 bathroom",
+  review: "4.8",
+  reviewCount: 8,
+  price: "4500",
+  guest: '18+',
+  owner: 'Host Name',
+  ownerImg: 'https://example.com/host-profile-image.jpg',
+  Feature: [
+    "Rural Setting",
+    "Outdoor Seating Area",
+    "Farm-to-Table Experience",
+    "Wi-Fi",
+    "Air Conditioning",
+    "Free Parking"
+  ],
+  reviewText: [
+    {
+      id: 1,
+      author: "Maria",
+      country: "Indonesia",
+      content:
+        "A wonderful stay at the Tranquil Farm Stay in Bali! The Cozy Cottage provided a perfect blend of nature and comfort. The farm-to-table experience was delightful, and the hosts were welcoming.",
+      rating: 5
+    },
+    {
+      id: 2,
+      author: "John",
+      country: "United States",
+      content:
+        "Breathtaking views! The outdoor seating area offered stunning views of the surrounding nature. We enjoyed the peaceful atmosphere and the warm hospitality of the hosts.",
+      rating: 5
+    },
+    {
+      id: 3,
+      author: "Sakura",
+      country: "Japan",
+      content:
+        "A hidden gem in Mengwi! The Cozy Cottage is a perfect getaway. The rural setting, combined with modern amenities, creates a unique and memorable experience.",
+      rating: 4
+    },
+    {
+      id: 4,
+      author: "Antonio",
+      country: "Italy",
+      content:
+        "An enchanting stay! The tranquil environment and farm-to-table experience make this farm stay exceptional. Highly recommended for those seeking relaxation and nature.",
+      rating: 5
+    }
+  ],
+  DetailDescription: ''
+}
+,
+ {
+  id: "phuket-farmstay",
+  name: "Tranquil Farm Stay in Thalang, Phuket, Thailand",
+  type: "Farm Stay",
+  rooms: "Serenity Suite",
+  dp: "https://a0.muscache.com/im/pictures/10aaecdf-91b0-4c63-8893-48fa011f05ef.jpg?im_w=1200",
+  img: [
+    "https://a0.muscache.com/im/pictures/10aaecdf-91b0-4c63-8893-48fa011f05ef.jpg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/d6e4ca52-52c1-46a3-81ad-1369ac9e0679.jpg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/c89a637a-661e-411f-9f98-20470922fe31.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/5dc40205-ef7b-4490-bbae-4a86ff31336f.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/96fcee1a-3528-40a1-8317-9a4162d533c5.jpg?im_w=1200"
+  ],
+  geocode: [8.0375, 98.3692],
+  description:
+    "Escape to a tranquil farm stay in Thalang, Phuket, Thailand, at the Serenity Suite. This farm stay offers a serene retreat surrounded by nature, providing a perfect getaway for those seeking peace and relaxation.",
+  capacity: "2 guests 1 bedroom 1 bathroom",
+  review: "4.9",
+  reviewCount: 12,
+  price: "5000",
+  guest: '18+',
+  owner: 'Host Name',
+  ownerImg: 'https://example.com/host-profile-image.jpg',
+  Feature: [
+    "Rural Setting",
+    "Private Balcony with Views",
+    "Organic Farm Experience",
+    "Wi-Fi",
+    "Air Conditioning",
+    "Free Parking"
+  ],
+  reviewText: [
+    {
+      id: 1,
+      author: "Sophia",
+      country: "Thailand",
+      content:
+        "A wonderful stay at the Tranquil Farm Stay in Phuket! The Serenity Suite offers breathtaking views from the private balcony. The organic farm experience adds a unique touch to the stay.",
+      rating: 5
+    },
+    {
+      id: 2,
+      author: "Alex",
+      country: "United States",
+      content:
+        "Perfect for nature lovers! The rural setting and peaceful atmosphere make this farm stay exceptional. The Serenity Suite is cozy and comfortable, and the hosts are welcoming.",
+      rating: 5
+    },
+    {
+      id: 3,
+      author: "Elena",
+      country: "Russia",
+      content:
+        "An idyllic retreat! The Serenity Suite provides a perfect escape. The private balcony offers stunning views, and the organic farm experience is a highlight. Highly recommended.",
+      rating: 5
+    },
+    {
+      id: 4,
+      author: "Raj",
+      country: "India",
+      content:
+        "A hidden gem in Thalang! The Serenity Suite exceeded our expectations. The tranquility and beauty of the surroundings make it a memorable farm stay. We will definitely return.",
+      rating: 4
+    }
+  ],
+  DetailDescription: ''
+}
+
+    ,{
+      id: "phuket-farmstay",
+      name: "Tranquil Farm Stay in Thalang, Phuket, Thailand",
+      type: "Farm Stay",
+      rooms: "Serenity Suite",
+      dp: "https://a0.muscache.com/im/pictures/10aaecdf-91b0-4c63-8893-48fa011f05ef.jpg?im_w=1200",
+      img: [
+        "https://a0.muscache.com/im/pictures/10aaecdf-91b0-4c63-8893-48fa011f05ef.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/d6e4ca52-52c1-46a3-81ad-1369ac9e0679.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/c89a637a-661e-411f-9f98-20470922fe31.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/5dc40205-ef7b-4490-bbae-4a86ff31336f.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/96fcee1a-3528-40a1-8317-9a4162d533c5.jpg?im_w=1200"
+      ],
+      geocode: [8.0375, 98.3692],
+      description: "Escape to a tranquil farm stay in Thalang, Phuket, Thailand, at the Serenity Suite. This farm stay offers a serene retreat surrounded by nature, providing a perfect getaway for those seeking peace and relaxation.",
+      capacity: "2 guests 1 bedroom 1 bathroom",
+      review: "4.9",
+      reviewCount: 12,
+      price: "5000",
+      guest: "18+",
+      owner: "Host Name",
+      ownerImg: "https://example.com/host-profile-image.jpg",
+      feature: [
+        "Rural Setting",
+        "Private Balcony with Views",
+        "Organic Farm Experience",
+        "Wi-Fi",
+        "Air Conditioning",
+        "Free Parking"
+      ],
+      reviewText: [
+        {
+          id: 1,
+          author: "Sophia",
+          country: "Thailand",
+          content: "A wonderful stay at the Tranquil Farm Stay in Phuket! The Serenity Suite offers breathtaking views from the private balcony. The organic farm experience adds a unique touch to the stay.",
+          rating: 5
+        },
+        {
+          id: 2,
+          author: "Alex",
+          country: "United States",
+          content: "Perfect for nature lovers! The rural setting and peaceful atmosphere make this farm stay exceptional. The Serenity Suite is cozy and comfortable, and the hosts are welcoming.",
+          rating: 5
+        },
+        {
+          "id": 3,
+          "author": "Elena",
+          "country": "Russia",
+          "content": "An idyllic retreat! The Serenity Suite provides a perfect escape. The private balcony offers stunning views, and the organic farm experience is a highlight. Highly recommended.",
+          "rating": 5
+        },
+        {
+          id: 4,
+          author: "Raj",
+          country: "India",
+          content: "A hidden gem in Thalang! The Serenity Suite exceeded our expectations. The tranquility and beauty of the surroundings make it a memorable farm stay. We will definitely return.",
+          rating: 4
+        }
+      ],
+      detailDescription: ""
+    }
     
+  ,{
+    id: "lonavala-farmstay",
+    name: "Tranquil Farm Stay in Lonavala, India",
+    type: "Farm Stay",
+    rooms: "Serene Retreat",
+    dp: "https://a0.muscache.com/im/pictures/40d7c6ae-4fe2-49c9-9295-73c2976cfbab.jpg?im_w=720",
+    img: [
+      "https://a0.muscache.com/im/pictures/40d7c6ae-4fe2-49c9-9295-73c2976cfbab.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/e843bdcf-1f9a-4451-8e5e-80d3006fdc8a.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/74b43221-6d2c-47d4-8df5-c9c703de2211.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/49cdc654-db79-4c25-b5f6-2982729d1be6.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/74ebe5c4-037f-4624-b544-195384e15981.jpg?im_w=960"
+    ],
+    geocode: [18.7518, 73.4052],
+    description: "Escape to a tranquil farm stay in Lonavala, India, at the Serene Retreat. This farm stay offers a peaceful getaway surrounded by lush greenery, providing a perfect setting for relaxation and rejuvenation.",
+    capacity: "2 guests 1 bedroom 1 bathroom",
+    review: "4.8",
+    reviewCount: 15,
+    price: "4500",
+    guest: "18+",
+    owner: "Host Name",
+    ownerImg: "https://example.com/host-profile-image.jpg",
+    feature: [
+      "Tranquil Setting",
+      "Lush Greenery",
+      "Private Outdoor Space",
+      "Wi-Fi",
+      "Air Conditioning",
+      "Free Parking"
+    ],
+    reviewText: [
+      {
+        id: 1,
+        author: "Sophie",
+        country: "India",
+        content: "A delightful stay at the Tranquil Farm Stay in Lonavala! The Serene Retreat provided a peaceful environment, and the lush greenery added to the charm. Highly recommended.",
+        rating: 5
+      },
+      {
+        id: 2,
+        author: "Andrew",
+        country: "United Kingdom",
+        content: "The Serene Retreat is truly tranquil! Surrounded by nature, the farm stay in Lonavala exceeded our expectations. The private outdoor space was a bonus.",
+        rating: 4
+      },
+      {
+        id: 3,
+        author: "Sara",
+        country: "United States",
+        content: "An idyllic escape! The Serene Retreat in Lonavala is a perfect getaway. The serene setting and comfortable accommodations make it a memorable experience.",
+        rating: 5
+      },
+      {
+        id: 4,
+        author: "Rajat",
+        country: "India",
+        content: "Fantastic farm stay! The Serene Retreat offers tranquility and comfort. The lush greenery surrounding the property creates a serene and rejuvenating atmosphere.",
+        rating: 4
+      }
+    ],
+    detailDescription: ""
+  }
   
 
 
