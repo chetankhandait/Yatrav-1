@@ -15,7 +15,7 @@ const Topbar = () => {
       navigate("/sign-in");
     }
   });
-  const defaultProfileImage = "src/assets/default.png"; // Add the path to your default image
+  const defaultProfileImage = "/images/default.png"; // Add the path to your default image
   return (
     <div className="bg-white py-4 w-full h-16 fixed    flex   justify-between  gap-5   z-30 font-semibold    ">
       <img

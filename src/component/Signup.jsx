@@ -90,7 +90,7 @@ const Signup = () => {
               className="bg-white rounded-md w-full shadow-2xl my-2 p-4  flex items-center  justify-center hover:"
               onClick={handleGoogleSignup}
             >
-              <img src="src/assets/search.png" alt="" className="h-4 pr-2" />
+              <img src="/images/search.png" alt="" className="h-4 pr-2" />
               Sign up with Google
             </button>
             <span className="text-white">Already have an account?</span>
@@ -100,7 +100,7 @@ const Signup = () => {
           </div>
         </section>
       </div>
-      <img src="src/assets/hotel.jpg" alt="" className="hidden md:block" />
+      <img src="/images/hotel.jpg" alt="" className="hidden md:block" />
     </div>
   );
 };
